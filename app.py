@@ -132,7 +132,7 @@ with col_reset:
     # Reset button (Compulsory Feature)
     if st.button("Reset Progress", type="secondary"):
         reset_progress()
-        st.experimental_rerun() # Rerun to update visuals instantly
+        st.rerun() # Rerun to update visuals instantly
 
 # --- Section 3: Progress & Feedback (Compulsory Interface Section) ---
 
