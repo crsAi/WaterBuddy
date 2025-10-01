@@ -126,7 +126,7 @@ with col_log:
     # Quick log button (+250ml) (st.button - Compulsory Feature)
     if st.button("Log +250 ml", type="primary"):
         log_water(250)
-        st.experimental_rerun() # Rerun to update visuals instantly
+        st.rerun() # Rerun to update visuals instantly
 
 with col_reset:
     # Reset button (Compulsory Feature)
