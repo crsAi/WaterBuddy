@@ -56,6 +56,10 @@ if 'total_intake' not in st.session_state:
 if 'daily_goal' not in st.session_state:
     # Set a sensible default goal
     st.session_state.daily_goal = AGE_GOALS["19-50 Years (Adult)"]
+# --- NEW LINE ADDED ---
+if 'age_selector' not in st.session_state:
+    st.session_state.age_selector = "19-50 Years (Adult)" # Use the default option
+# ----------------------
 
 def update_goal(age_group):
     """Updates the goal based on the selected age group."""
